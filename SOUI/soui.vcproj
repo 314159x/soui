@@ -246,7 +246,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\src\event\NotifyCenter.cpp"
+				RelativePath="src\event\NotifyCenter.cpp"
 				>
 			</File>
 			<File
@@ -387,6 +387,10 @@
 			</File>
 			<File
 				RelativePath="src\core\SPanel.cpp"
+				>
+			</File>
+			<File
+				RelativePath="src\helper\spropbag.cpp"
 				>
 			</File>
 			<File
@@ -592,7 +596,7 @@
 				>
 			</File>
 			<File
-				RelativePath=".\include\event\NotifyCenter.h"
+				RelativePath="include\event\NotifyCenter.h"
 				>
 			</File>
 			<File
@@ -808,6 +812,14 @@
 				>
 			</File>
 			<File
+				RelativePath="include\interface\spropbag-i.h"
+				>
+			</File>
+			<File
+				RelativePath="include\helper\spropbag.h"
+				>
+			</File>
+			<File
 				RelativePath="include\control\SRealWnd.h"
 				>
 			</File>
@@ -977,6 +989,10 @@
 			</File>
 			<File
 				RelativePath="include\core\SwndStyle.h"
+				>
+			</File>
+			<File
+				RelativePath=".\include\interface\TvItemLocator-i.h"
 				>
 			</File>
 			<File
