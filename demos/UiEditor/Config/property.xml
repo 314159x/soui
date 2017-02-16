@@ -235,7 +235,7 @@ Tab (& #x0009;)
 
 
 		<animateimg>
-			<分组 name="基本属性:  animateimg">
+			<分组 name="属性: animateimg">
 
 
 				<id/>
@@ -244,15 +244,9 @@ Tab (& #x0009;)
 				<pos/>
 				<size/>
 				<offset/>
-				<class/>
-				<font/>	
-				<fontHover/>				
+				<class/>			
 				<tip/>			
-				<cursor/>				
-				<colorBkgnd/>
-				<colorText/>
-
-				<UiEdit_windowText/>				
+				<cursor/>								
 			</分组>
 			<分组 name="属性:  animateimg">
 				<speed style="proptext" name ="速度(speed)" />
@@ -260,6 +254,28 @@ Tab (& #x0009;)
 				<repeat style="proptext" name ="重复次数" description="动画重复次数"/>
 			</分组>			
 		</animateimg>	
+
+		<anmimg>
+			<分组 name="属性: anmimg">
+				<id/>
+				<name/>
+				<skin/>
+				<pos/>
+				<size/>
+				<offset/>
+				<class/>			
+				<tip/>			
+				<cursor/>						
+			</分组>
+			<分组 name="属性:  anmimg">
+				<interval style="proptext" name ="动画间隔(interval)" description="interval：动画间隔，单位毫秒"/>
+				<autorun style="proptext" name ="autorun" description="-1:默认，不自动运行
+				&#x000A;0:连续动画（使用ani_in）;
+				&#x000A;大于0：间隔动画的暂停时间，单位秒"/>
+				<ani_in style="proptext" name ="ani_in" ButtonType="Skin" description="鼠标进入时的动画" />
+				<ani_out style="proptext" name ="ani_out" ButtonType="Skin" description="鼠标离开时的动画" />				
+			</分组>			
+		</anmimg>			
 
 		<button>
 			<分组 name="属性:  button">
@@ -686,6 +702,63 @@ Tab (& #x0009;)
 			</分组>			
 		</flash>		
 
+		<gifplayer>
+			<分组 name="属性:  gifplayer">
+				<id/>
+				<name/>
+				<skin/>
+				<ncskin/>
+				<pos/>
+				<size/>
+				<offset/>
+				<class/>
+				<data/>
+				<enable/>
+				<visible/>
+				<show/>
+				<display/>
+				<cache/>
+				<alpha/>
+				<tip/>				
+				<layeredWindow style="proptext" name ="layeredWindow" />
+				<trackMouseEvent style="proptext" name ="trackMouseEvent" />
+				<msgTransparent/>
+				<maxWidth style="proptext" name ="maxWidth" />
+				<clipClient style="proptext" name ="clipClient" />
+				<focusable/>
+				<drawFocusRect/>
+				<float/>
+				<UiEdit_windowText/>				
+			</分组>
+
+			<分组 name="属性:  style">
+				<textMode style="proptext" name ="textMode" />						
+				<align style="propoption" name ="align" options="left|center|right"/>						
+				<valign style="propoption" name ="valign" options="top|middle|bottom"/>						
+				<colorBkgnd/>						
+				<colorBorder style="propcolor" name ="colorBorder" />
+				<font/>						
+				<fontHover/>						
+				<fontPush/>
+				<fontDisable/>
+				<colorText/>				
+				<colorTextHover style="propcolor" name ="colorTextHover" />				
+				<colorTextPush style="propcolor" name ="colorTextPush" />				
+				<colorTextDisable style="propcolor" name ="colorTextDisable" />				
+				<margin-x style="proptext" name ="margin-x" />				
+				<margin-y style="proptext" name ="margin-y" />				
+				<margin style="proptext" name ="margin" />				
+				<inset style="proptext" name ="inset" description="文字区4个方向的内边距 和padding一样"/>				
+				<padding style="proptext" name ="padding" description="文字区4个方向的内边距 和inset一样"/>				
+				<cursor/>				
+				<dotted style="propoption" name ="dotted" options="是:1|否:0" description="是否支持省略号显示文本"/>				
+				<bkgndBlend style="proptext" name ="bkgndBlend" />				
+
+				<sepSpace style="proptext" name ="sepSpace" />				
+			</分组>
+
+		</gifplayer>	
+
 
 		<group>
 			<分组 name="属性:  group">
@@ -709,7 +782,8 @@ Tab (& #x0009;)
 				<colorLine1 style="propcolor" name ="colorLine1" />
 				<colorLine2 style="propcolor" name ="colorLine2" />			
 				<round style="proptext" name ="round" />			
-				<headerHeight style="proptext" name ="headerHeight" />			
+				<headerHeight style="proptext" name ="headerHeight" />	
+				<align style="propoption" name ="align" options="left|center|right"/>					
 			</分组>
 
 
@@ -1017,7 +1091,44 @@ Tab (& #x0009;)
 				<wantTab style="proptext" name ="wantTab" />	
 
 			</分组>			
-		</listview>		
+		</listview>	
+
+
+		<mclistview>
+			<分组 name="属性:  mclistview">
+				<id/>
+				<name/>
+				<skin/>
+				<pos/>
+				<size/>
+				<offset/>
+				<class/>
+				<font/>		
+				<tip/>				
+				<colorBkgnd/>				
+			</分组>
+			<分组 name="属性:  div">
+				<sbSkin style="proptext" name ="滚动条皮肤(sbSkin)"  ButtonType="skin"/>	
+				<sbArrowSize style="proptext" name ="sbArrowSize" />	
+				<sbWid style="proptext" name ="滚动条宽度(sbWid)" />	
+				<sbEnable style="proptext" name ="滚动条可用(sbEnable)" />	
+				<updateInterval style="proptext" name ="updateInterval" value="1111"/>	
+				<scrollSpeed style="proptext" name ="滚动速度(scrollSpeed)" />	
+				<sbLeft style="proptext" name ="sbLeft" />	
+				<sbRight style="proptext" name ="sbRight" />	
+				<sbTop style="proptext" name ="sbTop" />	
+				<sbBottom style="proptext" name ="sbBottom" />	
+
+			</分组>
+			<分组 name="属性:  mclistview">
+				<headerHeight style="proptext" name ="headerHeight"  />	
+				<hotTrack style="propoption" name ="hotTrack" options="是:1|否:0"/>	
+				<dividerSkin style="proptext" name ="dividerSkin" ButtonType="skin"/>	
+				<dividerSize style="proptext" name ="dividerSize" />	
+				<wantTab style="propoption" name ="wantTab" options="是:1|否:0"/>	
+
+			</分组>			
+		</mclistview>		
 
 
 

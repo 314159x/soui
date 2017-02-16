@@ -33,6 +33,10 @@
 			<animateimg pos="0,0" size="96,96" skin="_skin.sys.tree.checkbox" autostart="1"  speed = "100"/>
 		</animateimg_动画>
 
+		<anmimg_动画>		
+			<anmimg size="50,50" ani_in="_skin.sys.checkbox" ani_out="_skin.sys.radio" interval="50"  />
+		</anmimg_动画>
+
 
 		<button_按钮>
 			<button pos="0,0" size="96,32" colorText="#000000"
@@ -110,9 +114,12 @@
 			<flash pos="0,0" size="200,200"  url="" delay="1"/>
 		</flash>
 
-
+		<gif_动画>
+			<gifplayer pos="0,0" size="96,96" />
+		</gif_动画>
+		
 		<group_组合框>
-			<group pos="0,0" size="120,120" align="left">组合框</group>
+			<group pos="0,0" size="120,120" align="left" headerHeight="0">组合框</group>
 		</group_组合框>
 
 
@@ -188,7 +195,7 @@
 
 		<mclistview>
 			<mclistview size="120,120" headerHeight="30">
-				<header align="center" itemSwapEnable="1" fixWidth="0" sortHeader="1">
+				<header align="center" itemSwapEnable="1" fixWidth="0" sortHeader="1" colorText="#000000ff">
 					<items>
 						<item width="50">姓名</item>
 						<item width="50">年龄</item>

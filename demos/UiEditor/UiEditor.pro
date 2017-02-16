@@ -11,6 +11,7 @@ INCLUDEPATH += . \
 		../../components \
 		../../config \
 		../../controls.extend \
+		../../third-part/SciLexer/include \
 
 
 dir = ../..
@@ -84,7 +85,10 @@ SOURCES+=./trayicon/SShellNotifyIcon.cpp
 SOURCES+=./colorpicker/ColourPopup.cpp
 SOURCES+=./colorpicker/SColorPicker.cpp
 SOURCES+=./DlgFontSelect.cpp
+SOURCES+=./helpapi.cpp
 
+HEADERS+=./SListBoxDrop.h
+HEADERS+=./Adapter.h
 HEADERS+=./CDebug.h
 HEADERS+=./CNewGuid.h
 HEADERS+=./DesignerView.h
@@ -97,8 +101,6 @@ HEADERS+=./DlgSkinSelect.h
 HEADERS+=./DlgStyleManage.h
 HEADERS+=./MainDlg.h
 HEADERS+=./resource.h
-HEADERS+=./SciLexer.h
-HEADERS+=./Scintilla.h
 HEADERS+=./ScintillaWnd.h
 HEADERS+=./SImageSwitcher.h
 HEADERS+=./SMoveWnd.h
@@ -120,6 +122,7 @@ HEADERS+=./colorpicker/ColourPopup.h
 HEADERS+=./colorpicker/SColorPicker.h
 HEADERS+=./colorpicker/Tooltipctrl.h
 HEADERS+=./DlgFontSelect.h
+HEADERS+=./helpapi.h
 HEADERS+=../../controls.extend/ExtendSkins.h
 HEADERS+=../../controls.extend/imre/ImgProvider.h
 HEADERS+=../../controls.extend/imre/IRichEditObjHost.h
